@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');//gerencia conexao com banco de dados, chamdo a lib mongosse
 
+
 /* module.exports = ()=> { //exportação de funcao pois a connection e uma função que precisa ser executada
     mongoose.connect('mongodb://localhost:27017/lojinha-castillo',
     {
