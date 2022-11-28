@@ -4,11 +4,11 @@ const bcrypt = require('bcrypt');
 
 //colecao que irar ser guardada dentro do banco de dados com as inforaçoes que irao ser necessárias no front-end
 const UserSchema = new mongoose.Schema({
-  nome: {
+  username: {
     type: String,
     require: true,
   },
-  sobre: {
+  lastame: {
     type: String,
     require: true,
   },
@@ -27,11 +27,7 @@ const UserSchema = new mongoose.Schema({
     type: Number,
     require: true
   },
-  cidade: {
-    type: String,
-    require: true
-  },
-  estado: {
+  city: {
     type: String,
     require: true
   },
