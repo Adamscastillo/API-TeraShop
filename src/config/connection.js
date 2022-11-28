@@ -12,14 +12,14 @@ const mongoose = require('mongoose');//gerencia conexao com banco de dados, cham
 }   
  */
 
-const dbUser = process.env.DB_USER
+//*const dbUser = process.env.DB_USER
 const dbPassword = process.env.DB_PASS
  
 
 module.exports=()=>{
 
     mongoose.connect(
-        `mongodb+srv://${dbUser}:${dbPassword}@cluster0.ujnwptz.mongodb.net/?retryWrites=true&w=majority`
+        `mongodb+srv://adminTerashop:${dbPassword}@terashop.e2tb4kd.mongodb.net/?retryWrites=true&w=majority`
 
     ).then(()=>{
         console.log('conectou ao BANCO!!!');
