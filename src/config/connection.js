@@ -19,7 +19,8 @@ const dbPassword = process.env.DB_PASS
 module.exports=()=>{
 
     mongoose.connect(
-        `mongodb+srv://${dbUser}:${dbPassword}@cluster0.ty5gs71.mongodb.net/?retryWrites=true&w=majority`
+        `mongodb+srv://${dbUser}:${dbPassword}@cluster0.ujnwptz.mongodb.net/?retryWrites=true&w=majority`
+
     ).then(()=>{
         console.log('conectou ao BANCO!!!');
     }).catch((err)=> console.log(err))
